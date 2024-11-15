@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-dialog-content {
+  width: 1200px; /* Set your desired width */
+  max-width: none; /* Ensure max-width doesn't constrain the width */
+}
+
+@media (max-width: 640px) {
+  /* For small devices (sm) */
+  .custom-dialog-content {
+    max-width: 90%; /* 90% of the viewport width */
+  }
+}
+
+@media (max-width: 768px) {
+  /* For medium devices (md) */
+  .custom-dialog-content {
+    max-width: 80%; /* 80% of the viewport width */
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
