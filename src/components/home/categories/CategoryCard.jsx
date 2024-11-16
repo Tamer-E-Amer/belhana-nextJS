@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const CategoryCard = ({ img, title, slug }) => {
   return (
-    <Link href={`/belhana/categories/${slug}`}>
+    <Link href={`/belhana/categories/${slug}`} prefetch={false}>
       <div className="cursor-pointer relative flex items-center justify-center group overflow-hidden">
         <img src={`assets/imgs/optimized/${img}`} alt={title} loading="lazy" />
 

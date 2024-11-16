@@ -4,10 +4,8 @@ import { GoPerson } from "react-icons/go";
 // modal
 import {
   Dialog,
-  DialogClose,
   DialogContent,
   DialogDescription,
-  DialogFooter,
   DialogHeader,
   DialogTitle,
   DialogTrigger,

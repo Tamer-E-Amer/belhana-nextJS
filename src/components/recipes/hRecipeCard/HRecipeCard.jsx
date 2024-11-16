@@ -24,6 +24,7 @@ const HRecipeCard = ({ data }) => {
           <Link
             href={`/belhana/recipe/${data.slug}`}
             className="hover:underline "
+            prefetch={false}
           >
             <div className=" text-sm md:text-xl text-dark-gray font-semibold w-full">
               {title}

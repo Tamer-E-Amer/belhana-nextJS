@@ -73,7 +73,7 @@ const RecipeSinglePage = async ({ params }) => {
           <div className="lg:hidden w-full px-2">
             <LinkToFB position={""} link={`${recipe.pathToFBPage}`} />
           </div>
-          <Link href={"/belhana/recipe"}>
+          <Link href={"/belhana/recipe"} prefetch={false}>
             <div className="w-full border my-4 p-2 flex items-center justify-center cursor-pointer text-xl bg-gray-200 hover:bg-radial-gradient from-dark-blue to-black from-50% hover:text-white text-gray-600 transitio duration-300">
               More recipes...
             </div>

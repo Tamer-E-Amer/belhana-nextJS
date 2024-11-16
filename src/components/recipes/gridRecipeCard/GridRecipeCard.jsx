@@ -12,7 +12,7 @@ const GridRecipeCard = ({ data }) => {
       />
 
       {/* title */}
-      <Link href={`/belhana/recipe/${slug}`}>
+      <Link href={`/belhana/recipe/${slug}`} prefetch={false}>
         <div className="hidden absolute -bottom-10 group-hover:flex  group-hover:bottom-0 right-0 transition-all duration-300 text-sm text-white   items-center justify-center w-full h-12 bg-primary-orange ">
           {data.title}
         </div>

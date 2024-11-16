@@ -38,7 +38,7 @@ const MasonryLayout = ({ recipeData }) => {
       >
         {recipeData.map((rec) => (
           // It is important to shet the width of the div container of the image
-          <Link key={rec._id} href={`belhana/recipe/${rec.slug}`}>
+          <Link key={rec._id} href={`belhana/recipe/${rec.slug}`} prefetch={false}>
             <div
               className={`${styles.masonryItem} cursor-pointer relative flex items-center justify-center group overflow-hidden w-full sm:w-[200px]`}
             >
