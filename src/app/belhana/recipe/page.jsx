@@ -1,13 +1,25 @@
 import { SearchBar, SortAndView,SideBarMenu,RecipeView } from "@/components";
 import { ViewProvider } from "@/contexts/viewContext";
 import { getAllRecipe, getCategories } from "@/lib/dataHandlers";
-// Data-Drivenn component
-// const SideBarMenu = dynamic(() =>
-//   import("@/components").then((mod) => mod.SideBarMenu)
-// );
-// const RecipeView = dynamic(() =>
-//   import("@/components").then((mod) => mod.RecipeView)
-// );
+
+export const metadata ={
+  title: "Belhana - Recipe",
+  description: "Discover our wide variety of recipes",
+  keywords: ["Belhana", "recipe", "food", "vegan", "healthy"],
+  canonical: "/recipe",
+  openGraph: {
+    type: "website",
+    title: "Belhana - Recipe",
+    description: "Discover our wide variety of recipes",
+    url: "/recipe",
+    siteName: "Belhana",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Belhana - Recipe",
+    description: "Discover our wide variety of recipes",
+  },
+}
 
 const page = async () => {
   const categories = await getCategories();

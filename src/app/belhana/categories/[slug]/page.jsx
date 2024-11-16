@@ -12,6 +12,17 @@ const SideBarMenu = dynamic(() =>
 import { ViewProvider } from "@/contexts/viewContext";
 import { getAllRecipe, getCategories, getCategory } from "@/lib/dataHandlers";
 
+// Meta data
+export const generateMetadata = async ({ params }) => {
+  const { slug } = params;
+  const cat = await getCategory(slug);
+  return {
+    title: `${cat.title} category`,
+    description: cat.description,
+  };
+};
+
+
 const page = async ({ params }) => {
   const { slug } = params;
   // const categories = await getCategories();
