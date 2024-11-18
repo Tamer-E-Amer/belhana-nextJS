@@ -21,7 +21,7 @@ const AdminPage = () => {
       {/* content */}
       <div className="w-full  flex flex-col xl:flex-row gap-4">
         {/*  main data */}
-        <div className=" basis-2/3 xl:pr-4 ">
+        <div className=" basis-2/3  ">
           {/* Top Category cards */}
           <CategoryCardsWrapper />
           {/* Likes and comments per category - categories */}
