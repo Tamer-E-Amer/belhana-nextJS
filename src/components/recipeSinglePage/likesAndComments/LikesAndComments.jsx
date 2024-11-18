@@ -11,11 +11,6 @@ const LikesAndComments = () => {
   };
   return (
     <div className="mx-2 my-8 flex items-center justify-start gap-2 lg:gap-12 flex-wrap">
-      {/* <SpecificationItem
-        title={""}
-        icon={<FaRegHeart className="text-2xl text-gray-title" />}
-        value={5525}
-      /> */}
       <div className="flex otems-center justify-center gap-2">
         {isLiked === true ? (
           <FaHeart
@@ -28,14 +23,7 @@ const LikesAndComments = () => {
             onClick={makeLikes}
           />
         )}
-        {/* <FaRegHeart
-          className={`text-2xl text-gray-title hover:cursor-pointer ${
-            isLiked ? "text-red-600" : ""
-          }`}
-          onClick={() => {
-            setIsLiked((prev) => !prev);
-          }}
-        /> */}
+     
         <span className="text-sm text-gray-title font-bold">5525</span>
       </div>
       <SpecificationItem

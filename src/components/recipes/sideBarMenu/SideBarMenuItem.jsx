@@ -7,7 +7,6 @@ const SideBarMenuItem = ({ data }) => {
   const { title, img, slug } = data;
   const params = useParams();
 
-  console.log("test params", params);
   return (
     <>
       <Link

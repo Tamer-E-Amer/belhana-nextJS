@@ -25,8 +25,6 @@ export const generateMetadata = async ({ params }) => {
 
 const page = async ({ params }) => {
   const { slug } = params;
-  // const categories = await getCategories();
-  // const category = await getCategory(slug);
 
   const [categories, category] = await Promise.all([
     getCategories({ revalidate: 3600 }),

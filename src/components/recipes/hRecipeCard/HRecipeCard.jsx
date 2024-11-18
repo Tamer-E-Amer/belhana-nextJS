@@ -28,7 +28,6 @@ const HRecipeCard = ({ data }) => {
           >
             <div className=" text-sm md:text-xl text-dark-gray font-semibold w-full">
               {title}
-              {/* {data.title} */}
             </div>
           </Link>
           <RecipeRank />

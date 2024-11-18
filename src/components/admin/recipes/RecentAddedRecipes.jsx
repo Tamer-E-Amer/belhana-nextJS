@@ -8,7 +8,7 @@ const RecentAddedRecipes = async () => {
     <RecentAddedItem key={index} data={recipe} type="recipes" />
   ));
   return (
-    <div className="xl:basis-1/3 w-full bg-white p-4 h-full rounded-md space-y-4">
+    <div className="xl:basis-1/3 w-full bg-white p-4 h-full rounded-md space-y-4 ">
       <h1 className="font-medium text-dark-gray">Recent Added Recipes</h1>
       <ScrollArea className="h-[600px] ">
         <div className="space-y-4">{recipes}</div>

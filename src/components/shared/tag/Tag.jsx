@@ -1,4 +1,4 @@
-const Tag = ({ bgColor, textColor, children }) => {
+const Tag = ({ bgColor, children }) => {
   let bg = "";
   switch (bgColor) {
     case "green":

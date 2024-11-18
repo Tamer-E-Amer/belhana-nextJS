@@ -67,7 +67,6 @@ const AdminRecipeTable = async () => {
           <RiDeleteBin6Line className="text-xl text-gray-text hover:cursor-pointer hover:text-primary-orange" />
         </div>
       </TableCell>
-      {/* <TableCell className="text-right">$250.00</TableCell> */}
     </TableRow>
   ));
   return (

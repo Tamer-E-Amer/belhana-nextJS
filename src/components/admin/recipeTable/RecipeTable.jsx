@@ -3,7 +3,6 @@ import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
   TableHead,
   TableHeader,
@@ -11,8 +10,6 @@ import {
 } from "@/components/ui/table";
 import { getAllRecipe } from "@/lib/dataHandlers";
 import Image from "next/image";
-import { FaFacebookF } from "react-icons/fa";
-import { MdEdit } from "react-icons/md";
 import { TbLetterX } from "react-icons/tb";
 import { FaCheck } from "react-icons/fa6";
 
@@ -48,16 +45,10 @@ const RecipeTable = async () => {
             <FaCheck className="text-white text-sm lg:text-lg" />
           </Tag>
         ) : (
-          //   <div className="w-20 h-8  rounded-full flex items-center justify-center text-white bg-green-600">
-          //     Yes
-          //   </div>
           <Tag bgColor="red">
             <TbLetterX className="text-white text-sm lg:text-lg" />
           </Tag>
 
-          //   <div className="w-20 h-8  rounded-full flex items-center justify-center text-white bg-red-400">
-          //     No
-          //   </div>
         )}
       </TableCell>
       {/* economic */}

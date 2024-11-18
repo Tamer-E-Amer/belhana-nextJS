@@ -60,20 +60,6 @@ const page = () => {
             />
           </div>
           {/* gender */}
-          {/* <div className="flex items-center justify-start gap-4">
-            <div className="flex  items-start gap-2  ">
-              <Checkbox id="male" className="h-6 w-6" />
-              <label htmlFor="male" className=" text-dark-gray ">
-                Male
-              </label>
-            </div>
-            <div className="flex  items-start gap-2  ">
-              <Checkbox id="female" className="h-6 w-6" />
-              <label htmlFor="female" className=" text-dark-gray ">
-                Female
-              </label>
-            </div>
-          </div> */}
           <RadioGroup defaultValue="option-one" className="flex items-center gap-4">
             <div className="flex items-center space-x-2">
               <RadioGroupItem value="male" id="male" />

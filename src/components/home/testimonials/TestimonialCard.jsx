@@ -21,7 +21,6 @@ const TestimonialCard = ({ data }) => {
     setSelectedDir(dir[dirIndex]);
   }, []);
 
-  // const selectedDir = dir[dirIndex];
   return (
     <>
       <Dialog>

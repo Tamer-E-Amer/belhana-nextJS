@@ -1,5 +1,4 @@
 const LinkToFB = ({ link, position }) => {
-  console.log("link to Fb", link);
   return (
     <a href={link} target="_blank">
       <div

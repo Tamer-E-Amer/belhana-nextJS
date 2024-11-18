@@ -1,4 +1,4 @@
-import { AdminPageTitle, AdminPageTitleWrapper, AdminSidebar, ProfileNotificationSearch } from "@/components";
+import { AdminPageTitleWrapper, AdminSidebar,  } from "@/components";
 export default function AdminLayout({ children }) {
   return (
     <div className="flex  items-start">

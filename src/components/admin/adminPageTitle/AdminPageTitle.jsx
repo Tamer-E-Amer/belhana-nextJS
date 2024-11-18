@@ -1,10 +1,7 @@
 "use client";
-import { useState } from "react";
 import { usePathname } from "next/navigation";
-import { IoIosMenu } from "react-icons/io";
 
 const AdminPageTitle = () => {
-  const [isMobilemenuShown, setIsMobilemenuShown] = useState(false);
   const path = usePathname();
   const currentPage = path.split("/").filter(Boolean).pop();
   return (

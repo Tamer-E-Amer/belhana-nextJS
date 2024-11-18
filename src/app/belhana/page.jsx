@@ -1,6 +1,4 @@
 import dynamic from "next/dynamic";
-
-//
 import { Hero, BackToTopBtn } from "@/components";
 
 // Data-Driven components

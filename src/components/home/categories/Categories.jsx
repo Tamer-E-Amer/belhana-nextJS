@@ -1,57 +1,5 @@
 import { CategoryCard } from "@/components";
 import { getCategories } from "@/lib/dataHandlers";
-// const categories = [
-//   {
-//     id: 1,
-//     title: "Meat",
-//     img: "/assets/imgs/meat.png",
-//   },
-//   {
-//     id: 2,
-//     title: "Poultry",
-//     img: "/assets/imgs/poultry.png",
-//   },
-//   {
-//     id: 3,
-//     title: "Fish",
-//     img: "/assets/imgs/fish.png",
-//   },
-//   {
-//     id: 4,
-//     title: "Sweets",
-//     img: "/assets/imgs/sweet.png",
-//   },
-//   {
-//     id: 5,
-//     title: "Stuffed food",
-//     img: "/assets/imgs/stuffed.png",
-//   },
-//   {
-//     id: 6,
-//     title: "Soup",
-//     img: "/assets/imgs/soup.png",
-//   },
-//   {
-//     id: 7,
-//     title: "Sandwitch",
-//     img: "/assets/imgs/sandwitch.png",
-//   },
-//   {
-//     id: 8,
-//     title: "Rice",
-//     img: "/assets/imgs/rice.png",
-//   },
-//   {
-//     id: 9,
-//     title: "Nodels",
-//     img: "/assets/imgs/nodels.png",
-//   },
-//   {
-//     id: 10,
-//     title: "Pastry",
-//     img: "/assets/imgs/pastry.png",
-//   },
-// ];
 
 const Categories = async () => {
   const categories = await getCategories();

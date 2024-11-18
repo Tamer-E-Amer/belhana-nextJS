@@ -3,7 +3,6 @@ import { getFeaturedRecipe } from "@/lib/dataHandlers";
 
 const FeaturedRecipe = async () => {
   const featuredRecipes = await getFeaturedRecipe();
-  // console.log(featuredRecipes);
   return (
     <>
       <section className="bg-white w-full  px-4 md:px-0 py-8" id="recipes">

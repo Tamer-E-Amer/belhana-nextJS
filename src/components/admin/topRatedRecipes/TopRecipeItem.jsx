@@ -7,7 +7,6 @@ const TopRecipeItem = ({ data }) => {
   const description =
    data?.description && data?.description.length > 50 ? `${data?.description.substr(0, 50)}...` : data?.description;
 
-  // const description = data.description.substr(0, 50);
   return (
     <div className="flex items-start gap-2">
       {/* image */}

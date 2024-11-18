@@ -8,7 +8,6 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import Image from "next/image";
-import { RiDeleteBin6Line } from "react-icons/ri";
 const MessagesTable = ({ header, data }) => {
   const messages = data.map((message) => (
     <TableRow key={message.id}>

@@ -1,8 +1,6 @@
 import {
   AddCategoryForm,
   AddedCategories,
-  RecentAddedItem,
-  RecentAddedRecipeItem,
 } from "@/components";
 import { ScrollArea } from "@/components/ui/scroll-area";
 

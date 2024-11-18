@@ -33,7 +33,6 @@ const AdminCategoryTable = async () => {
         <LiaEdit className="text-xl text-gray-text hover:cursor-pointer hover:text-primary-orange" />
         <RiDeleteBin6Line className="text-xl text-gray-text hover:cursor-pointer hover:text-primary-orange" />
       </TableCell>
-      {/* <TableCell className="text-right">$250.00</TableCell> */}
     </TableRow>
   ));
   return (
@@ -53,9 +52,6 @@ const AdminCategoryTable = async () => {
         {/* add Category */}
         <div className="flex items-center gap-2 group hover:cursor-pointer">
           <IoMdAdd className="text-2xl text-primary-orange" />
-          {/* <span className="text-sm text-dark-gray font-semibold group-hover:underline">
-            Add category
-          </span> */}
         </div>
       </div>
       {/* category table */}

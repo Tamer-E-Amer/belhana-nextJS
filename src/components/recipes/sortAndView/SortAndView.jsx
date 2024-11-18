@@ -6,7 +6,6 @@ import { IoGridSharp } from "react-icons/io5";
 
 const SortAndView = () => {
   const { view, setView } = useContext(ViewContext);
-  console.log("View of recipe", view);
   return (
     <div className="px-2 flex items-center justify-start gap-4 mb-4">
       <IoGridSharp

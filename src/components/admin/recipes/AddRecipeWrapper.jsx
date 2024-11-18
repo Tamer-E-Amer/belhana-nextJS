@@ -1,4 +1,4 @@
-import { AddRecipeForm, Combobox } from "@/components";
+import { AddRecipeForm } from "@/components";
 import { getCategories } from "@/lib/dataHandlers";
 
 const AddRecipeWrapper = async () => {

@@ -6,7 +6,6 @@ import { useState } from "react";
 const SideBarMenu = ({ categories }) => {
   const [isCategoryListDisplayed, setIsCateogryListDisplayed] = useState(false);
   const [isSpecDisplayed, setIsSpecDisplayed] = useState(false);
-  // console.log("CategoryList display", isCategoryListDisplayed);
   const renderedCategories = categories.map((cat) => (
     <SideBarMenuItem key={cat._id} data={cat} />
   ));

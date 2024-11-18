@@ -40,9 +40,6 @@ const SocialLinks = () => {
       <div className="flex w-[40px] h-[210px] border rounded-full border-white absolute top-16 right-4 z-30  flex-col items-center justify-between py-4 text-xl text-white">
         {renderLinks}
       </div>
-      {/* <div className="flex w-[44px] h-[270px] border rounded-full border-white absolute top-16 right-4 z-30  flex-col items-center justify-between py-4 text-xl text-white">
-        {renderLinks}
-      </div> */}
     </>
   );
 };

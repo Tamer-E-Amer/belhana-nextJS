@@ -1,7 +1,5 @@
 import {
   MessageContentAndReplyWrapper,
-  MessageDetails,
-  MessageReply,
   MessagesTable,
 } from "@/components";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
@@ -32,7 +30,7 @@ export const messagesData = [
     id: 1,
     from: "K. Adam",
     avatar: "avatar4",
-    title: "REgisteration problem",
+    title: "Registeration problem",
     date: "22-05-2024",
   },
 ];

@@ -29,7 +29,6 @@ const AdminSidebar = () => {
           ? "py-8 border-t lg:rounded-tl-none lg:rounded-bl-none border-t-gray-300"
           : ""
       } $ ${link.link !="/admin/log-out" &&  path.startsWith('/admin/settings')   ? "bg-admin-bg" : ""}`}
-      // } ${path === link.link ? "bg-admin-bg" : ""}`}
     >
       <div className="text-3xl text-gray-title">{link.icon}</div>
       <div className="text-lg text-dark-gray hidden lg:block">{link.title}</div>

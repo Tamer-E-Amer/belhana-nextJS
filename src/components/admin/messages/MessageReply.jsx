@@ -44,9 +44,6 @@ const MessageReply = () => {
 
       {/* messageBox */}
       <form action="" method="post" className="space-y-4">
-        {/* <div className="border border-gray-ine rounded-mg p-4 h-[300px] rounded-md text-lg leading-relaxed">
-          message data
-        </div> */}
         <textarea
           name="replyMessage"
           rows={6}

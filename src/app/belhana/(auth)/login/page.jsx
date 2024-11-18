@@ -50,7 +50,6 @@ const LoginPage = () => {
           <span className="text-sm text-dark-gray text-center inline-block w-full font-semibold">Or</span>
           {/* google button */}
           <button className="flex items-center justify-center gap-2 border text-white border-gray-line w-full py-2 p-x2 hover:cursor-pointer bg-gray-200  rounded-md">
-            {/* <IoIosSave className="text-3xl " /> */}
             <Image
               src="/assets/icons/google-icon.svg"
               width={20}

@@ -43,8 +43,6 @@ export { default as ContactForm } from "@/components/shared/contact/ContactForm"
 export { default as Testimonials } from "@/components/home/testimonials/Testimonials";
 export { default as TestimonialCard } from "@/components/home/testimonials/TestimonialCard";
 
-//test
-export { default as TestFetch } from "@/components/testFetch/TestFetch";
 
 // Recipe single page
 export { default as RecipeTitle } from "@/components/recipeSinglePage/recipeTitle/RecipeTitle";

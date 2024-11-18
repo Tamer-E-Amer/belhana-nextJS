@@ -2,8 +2,6 @@
 import React from "react";
 import Masonry from "react-masonry-css";
 import styles from "./MasonryLayout.module.css";
-
-import Image from "next/image";
 import Link from "next/link";
 
 const images = [
@@ -37,7 +35,7 @@ const MasonryLayout = ({ recipeData }) => {
         columnClassName={styles.myMasonryGridColumn}
       >
         {recipeData.map((rec) => (
-          // It is important to shet the width of the div container of the image
+          // It is important to set the width of the div container of the image
           <Link key={rec._id} href={`belhana/recipe/${rec.slug}`} prefetch={false}>
             <div
               className={`${styles.masonryItem} cursor-pointer relative flex items-center justify-center group overflow-hidden w-full sm:w-[200px]`}

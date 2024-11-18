@@ -1,10 +1,9 @@
 "use client";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { MessageDetails, MessageReply } from "@/components";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import {
   MessageReplyFormContext,
-  MessageReplyFormProvider,
 } from "@/contexts/messageReplyFormViewContext";
 
 const MessageContentAndReplyWrapper = () => {

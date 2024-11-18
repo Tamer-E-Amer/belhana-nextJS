@@ -1,12 +1,9 @@
-import dynamic from "next/dynamic";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 
 import {
-  AdminCategoryTable,
   CategoryCardsWrapper,
   LikesCommentsDiagram,
   MessagesTable,
-  ProfileNotificationSearch,
   SideBox,
   TableBox,
   TopRatedRecipes,
@@ -16,10 +13,7 @@ import {
   UsersTable,
 } from "@/components";
 import { messagesData } from "./messages/page";
-// const UsersChart = dynamic(() =>
-//   import("@/components").then((mod) => mod.UsersChart)
-// );
-// import RecipeSatisticsPieChart from "@/components/admin/recipeSatisticsPieChart/RecipeSatisticsPieChart";
+
 
 const AdminPage = () => {
   return (
@@ -33,13 +27,7 @@ const AdminPage = () => {
           {/* Likes and comments per category - categories */}
           <div className="flex items-center justify-center mb-4 ">
             {/* diagram */}
-            {/* <div className="basis-1/2"> */}
             <LikesCommentsDiagram />
-            {/* </div> */}
-            {/* category table */}
-            {/* <ScrollArea className="basis-1/2 h-[400px] rounded-md border ">
-              <AdminCategoryTable />
-            </ScrollArea> */}
           </div>
           {/* recipe table */}
           <TableBox title="Recipes">
