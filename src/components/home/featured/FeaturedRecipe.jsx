@@ -1,5 +1,5 @@
 import { MasonaryRecipes } from "@/components";
-import { getFeaturedRecipe } from "@/lib/dataHandlers";
+import { getFeaturedRecipe } from "@/lib/actions";
 
 const FeaturedRecipe = async () => {
   const featuredRecipes = await getFeaturedRecipe();

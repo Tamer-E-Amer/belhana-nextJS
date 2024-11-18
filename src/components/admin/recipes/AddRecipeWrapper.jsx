@@ -1,5 +1,5 @@
 import { AddRecipeForm } from "@/components";
-import { getCategories } from "@/lib/dataHandlers";
+import { getCategories } from "@/lib/actions";
 
 const AddRecipeWrapper = async () => {
   const categories = await getCategories();

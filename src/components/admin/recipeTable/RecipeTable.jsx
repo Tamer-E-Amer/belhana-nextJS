@@ -8,7 +8,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { getAllRecipe } from "@/lib/dataHandlers";
+import { getAllRecipe } from "@/lib/actions";
 import Image from "next/image";
 import { TbLetterX } from "react-icons/tb";
 import { FaCheck } from "react-icons/fa6";

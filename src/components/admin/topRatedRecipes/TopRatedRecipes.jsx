@@ -1,5 +1,5 @@
 import {  TopRecipeItem } from "@/components";
-import { getAllRecipe } from "@/lib/dataHandlers";
+import { getAllRecipe } from "@/lib/actions";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
 const TopRatedRecipes = async () => {

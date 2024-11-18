@@ -1,6 +1,6 @@
 import { AdminCategoryCard } from "@/components";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { getCategories } from "@/lib/dataHandlers";
+import { getCategories } from "@/lib/actions";
 
 const CategoryCardsWrapper = async () => {
   const categoriesData = await getCategories();

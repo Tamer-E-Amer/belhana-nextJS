@@ -10,7 +10,7 @@ const SideBarMenu = dynamic(() =>
 );
 ////////////////////////////////
 import { ViewProvider } from "@/contexts/viewContext";
-import { getAllRecipe, getCategories, getCategory } from "@/lib/dataHandlers";
+import { getAllRecipe, getCategories, getCategory } from "@/lib/actions";
 
 // Meta data
 export const generateMetadata = async ({ params }) => {

@@ -1,5 +1,5 @@
 import { CategoryCard } from "@/components";
-import { getCategories } from "@/lib/dataHandlers";
+import { getCategories } from "@/lib/actions";
 
 const Categories = async () => {
   const categories = await getCategories();

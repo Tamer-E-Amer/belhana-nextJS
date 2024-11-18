@@ -1,6 +1,6 @@
 import { SearchBar, SortAndView,SideBarMenu,RecipeView } from "@/components";
 import { ViewProvider } from "@/contexts/viewContext";
-import { getAllRecipe, getCategories } from "@/lib/dataHandlers";
+import { getAllRecipe, getCategories } from "@/lib/actions";
 
 export const metadata ={
   title: "Belhana - Recipe",

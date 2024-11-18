@@ -1,6 +1,6 @@
 import { RecentAddedItem } from "@/components";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { getAllRecipe } from "@/lib/dataHandlers";
+import { getAllRecipe } from "@/lib/actions";
 
 const RecentAddedRecipes = async () => {
   const recipesData = await getAllRecipe();

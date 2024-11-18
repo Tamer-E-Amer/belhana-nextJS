@@ -2,7 +2,6 @@ import sharp from "sharp";
 import fs from "fs";
 
 export async function getImageBlurDataURL(imageName) {
-  console.log("Image name", imageName);
   const imagePath = `public/assets/imgs/optimized/${imageName}`;
 
   try {

@@ -5,7 +5,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { getCategories } from "@/lib/dataHandlers";
+import { getCategories } from "@/lib/actions";
 import { FiSearch } from "react-icons/fi";
 import { IoMdAdd } from "react-icons/io";
 const TableBox = async ({ title, children }) => {

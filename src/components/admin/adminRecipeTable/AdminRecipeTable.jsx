@@ -6,7 +6,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { getAllRecipe } from "@/lib/dataHandlers";
+import { getAllRecipe } from "@/lib/actions";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import Image from "next/image";
 import { LiaEdit } from "react-icons/lia";

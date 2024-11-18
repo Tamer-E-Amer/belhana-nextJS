@@ -7,7 +7,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 
-import { getCategories } from "@/lib/dataHandlers";
+import { getCategories } from "@/lib/actions";
 import Image from "next/image";
 import { IoMdAdd } from "react-icons/io";
 import { LiaEdit } from "react-icons/lia";
