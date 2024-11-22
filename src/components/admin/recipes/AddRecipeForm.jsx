@@ -70,7 +70,7 @@ const AddRecipeForm = ({ categories }) => {
           <div className="p-2 bg-gray-200 rounded-t-md">
             <h3 className="font-medium text-dark-gray">Recipe properties</h3>
           </div>
-          <div className="w-full grid grid-cols-3 lg:grid-cols-4 gap-6 px-2 ">
+          <div className="w-full grid grid-cols-3 lg:grid-cols-4 gap-4 px-2 ">
             <AdminCheckbox
               title="Economic"
               htmlFor="economic"
