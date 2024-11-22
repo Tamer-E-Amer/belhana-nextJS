@@ -9,7 +9,7 @@ const AddRecipeForm = ({ categories }) => {
   const [hasRecipeVideo, setHasRecipeVideo] = useState(false);
 
   return (
-    <div className="xl:basis-2/3 w-full h-full bg-white p-4 rounded-md">
+    <div className="xl:basis-2/3 w-full h-full bg-white p-0 rounded-md">
       <form action="" className="space-y-8">
         <FormTitle title="Add new category" />
         {/* title */}
@@ -65,9 +65,12 @@ const AddRecipeForm = ({ categories }) => {
           </div>
         </div>
         {/* test Flex preparation time and checkboxes */}
-        <div className="rounded-md bg-gray-100 p-4">
-          <h3 className="font-medium text-dark-gray mb-2">Recipe properties</h3>
-          <div className="w-full grid grid-cols-3 lg:grid-cols-4 gap-6 p-4 bg-gray-200 rounded-md">
+        <div className="rounded-md bg-gray-100 space-y-3 pb-4">
+          {/* properties title */}
+          <div className="p-2 bg-gray-200 rounded-t-md">
+            <h3 className="font-medium text-dark-gray">Recipe properties</h3>
+          </div>
+          <div className="w-full grid grid-cols-3 lg:grid-cols-4 gap-6 px-2 ">
             <AdminCheckbox
               title="Economic"
               htmlFor="economic"
@@ -89,16 +92,17 @@ const AddRecipeForm = ({ categories }) => {
               title="Has a video"
               htmlFor="hasAVideo"
               name="hasAVideo"
-              onChange={(e)=>{setHasRecipeVideo(e.target.checked)}}
+              onChange={(e) => {
+                setHasRecipeVideo(e.target.checked);
+              }}
               checked={hasRecipeVideo}
             />
             {/* <div className="colspg">
 
             </div> */}
-     
           </div>
           {hasRecipeVideo && (
-            <div className="flex flex-col items-start gap-2 mt-4">
+            <div className="flex flex-col items-start gap-2 mt-4 px-2">
               <label
                 htmlFor="recipeTitle"
                 className="font-medium text-dark-gray "
