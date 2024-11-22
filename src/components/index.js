@@ -112,5 +112,6 @@ export { default as SettingsFormContainer } from "@/components/admin/settings/Se
 
 // shared UI
 export { default as AdminInput } from "@/components/shared/admin/ui/AdminInput";
+export { default as AdminCheckbox } from "@/components/shared/admin/ui/AdminCheckbox";
 export { default as AdminFormsButton } from "@/components/shared/admin/ui/AdminFormsButton";
 export { default as ImageUploader } from "@/components/shared/admin/ui/ImageUploader";
