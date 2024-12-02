@@ -38,7 +38,7 @@ const LoginPage = () => {
               </label>
             </div>
             <Link
-              href="#"
+              href="/belhana/forgetPassword"
               className="text-sm text-dark-blue hover:underline"
             >
               Forget password
