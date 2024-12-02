@@ -27,7 +27,7 @@ export default function Home() {
       <Categories />
       <BackToTopBtn />
       <About />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Contact />
     </>
   );

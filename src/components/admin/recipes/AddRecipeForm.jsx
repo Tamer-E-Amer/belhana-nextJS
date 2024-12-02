@@ -1,13 +1,18 @@
 "use client";
-import { AdminCheckbox, Combobox, FormTitle } from "@/components";
-import { Checkbox } from "@/components/ui/checkbox";
+import { AdminCheckbox, AdminSelect, Combobox, FormTitle } from "@/components";
+import Select from "react-select";
+import makeAnimated from "react-select/animated";
 import Image from "next/image";
 import { useState } from "react";
 import { IoIosSave } from "react-icons/io";
 
 const AddRecipeForm = ({ categories }) => {
   const [hasRecipeVideo, setHasRecipeVideo] = useState(false);
-
+  const animatedComponents = makeAnimated();
+  const ObjectCategories = categories.map((category) => ({
+    value: category.title,
+    label: category.title,
+  }));
   return (
     <div className="xl:basis-2/3 w-full h-full bg-white p-0 rounded-md">
       <form action="" className="space-y-8">
@@ -38,18 +43,49 @@ const AddRecipeForm = ({ categories }) => {
         </div>
 
         {/* flex Category and Facebook link */}
-        <div className="flex flex-col xl:flex-row items-center xl:justify-between gap-4">
-          {/* Category */}
-          <div className="flex flex-col items-start gap-2 xl:basis-1/2 w-full ">
-            <label htmlFor="" className="font-medium text-dark-gray ">
-              Category
+        <div className="flex flex-col items-start gap-2 w-full">
+            <label htmlFor="category" className="font-medium text-dark-gray ">
+              category
             </label>
-            <div className="w-full outline-none border border-gray-line rounded-md   font-medium text-dark-gray">
-              <Combobox data={categories} />
-            </div>
+            <Select
+              closeMenuOnSelect={false}
+              components={animatedComponents}
+              isMulti
+              // defaultValue={[ObjectCategories[1]]}
+              options={ObjectCategories}
+              className="w-full"
+              styles={{
+                control: (provided, state) => ({
+                  ...provided,
+                  borderColor: state.isFocused ? '#AFAFAF' : '#AFAFAF',
+                  borderWidth: 1,
+                  boxShadow: state.isFocused ? '0 0 0 1px #AFAFAF' : null,
+                  '&:hover': {
+                    borderColor: '#AFAFAF',
+                  },
+                }),
+                option: (provided, state) => ({
+                  ...provided,
+                  backgroundColor: state.isSelected
+                    ? '#161515' // Selected background
+                    : state.isFocused || state.isHovered
+                    ? '#EEEEEE' // Dark blue background when hovered or focused
+                    : 'white', // Default background
+                  color: state.isSelected
+                    ? 'white' // White text when selected
+                    : state.isHovered
+                    ? 'white !important' // White text when hovered (with !important to ensure it overrides other styles)
+                    : 'black', // Default text color
+                  cursor: 'pointer', // Optional: change cursor to pointer on hover
+                  padding: '8px 12px', // Optional: adjust padding
+                  transition: 'background-color 0.3s, color 0.3s', // Smooth transition for color and background
+                }),
+              }}
+              
+            />
           </div>
-          {/* facebook */}
-          <div className="flex flex-col items-start gap-2 xl:basis-1/2 w-full">
+         {/* facebook */}
+         <div className="flex flex-col items-start gap-2 xl:basis-1/2 w-full">
             <label
               htmlFor="facebookLink"
               className="font-medium text-dark-gray "
@@ -63,7 +99,6 @@ const AddRecipeForm = ({ categories }) => {
               className="w-full outline-none border border-gray-line rounded-md px-4 py-2 font-medium text-dark-gray"
             />
           </div>
-        </div>
         {/* test Flex preparation time and checkboxes */}
         <div className="rounded-md bg-gray-100 space-y-3 pb-4">
           {/* properties title */}
