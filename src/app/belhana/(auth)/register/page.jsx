@@ -60,16 +60,44 @@ const page = () => {
             />
           </div>
           {/* gender */}
-          <RadioGroup defaultValue="option-one" className="flex items-center gap-4">
-            <div className="flex items-center space-x-2">
-              <RadioGroupItem value="male" id="male" />
-              <Label htmlFor="male">Male</Label>
+
+          <div class="flex gap-4">
+            {/* <!-- Male Option --> */}
+            <div>
+              <input
+                type="radio"
+                name="gender"
+                id="male"
+                class="peer hidden"
+                value="male"
+              />
+              <label
+                for="male"
+                class="cursor-pointer px-4 py-2 border rounded-lg 
+             peer-checked:bg-dark-blue peer-checked:text-white"
+              >
+                Male
+              </label>
             </div>
-            <div className="flex items-center space-x-2">
-              <RadioGroupItem value="female" id="female"/>
-              <Label htmlFor="female">Female</Label>
+
+            {/* <!-- Female Option --> */}
+            <div>
+              <input
+                type="radio"
+                name="gender"
+                id="female"
+                value="female"
+                class="peer hidden"
+              />
+              <label
+                for="female"
+                class="cursor-pointer px-4 py-2 border rounded-lg 
+             peer-checked:bg-dark-blue peer-checked:text-white"
+              >
+                Female
+              </label>
             </div>
-          </RadioGroup>
+          </div>
 
           {/* save button */}
           <div className="md:col-span-2">

@@ -13,7 +13,13 @@ const LoginPage = () => {
         <h1 className="text-gray-600 text-xl font-semibold">Welcome back</h1>
         <p className="text-gray-500 text-sm leading-relaxed">
           Allows you to have your own favourite recipe and comment on recipes
-          you liked.If you do not have an account yet, you <Link href="/belhana/register" className="text-primary-orange  hover:underline">can register here</Link>
+          you liked.If you do not have an account yet, you{" "}
+          <Link
+            href="/belhana/register"
+            className="text-primary-orange  hover:underline"
+          >
+            can register here
+          </Link>
         </p>
         {/* form */}
         <form action="" className="space-y-8">
@@ -31,8 +37,11 @@ const LoginPage = () => {
           />
           {/* remember me and forget password */}
           <div className="flex items-center justify-between">
-            <div className="flex  items-start gap-2  ">
-              <Checkbox id="rememberMe" className="h-6 w-6" />
+            <div className="flex  items-center gap-2  ">
+              <Checkbox
+                id="rememberMe"
+                className="h-4 w-4 ring ring-gray-600 focus:outline-none border-gray-700"
+              />
               <label htmlFor="rememberMe" className=" text-dark-gray ">
                 Remember me
               </label>
@@ -46,18 +55,22 @@ const LoginPage = () => {
           </div>
           {/* Buttons */}
           <div className="space-y-4">
-          <AdminFormsButton title="Login" icon={<IoMdLogIn />} />
-          <span className="text-sm text-dark-gray text-center inline-block w-full font-semibold">Or</span>
-          {/* google button */}
-          <button className="flex items-center justify-center gap-2 border text-white border-gray-line w-full py-2 p-x2 hover:cursor-pointer bg-gray-200  rounded-md">
-            <Image
-              src="/assets/icons/google-icon.svg"
-              width={20}
-              height={20}
-              alt="Google icon"
-            />
-            <span className="text-sm text-dark-gray  ">Sign in with your Google account</span>
-          </button>
+            <AdminFormsButton title="Login" icon={<IoMdLogIn />} />
+            <span className="text-sm text-dark-gray text-center inline-block w-full font-semibold">
+              Or
+            </span>
+            {/* google button */}
+            <button className="flex items-center justify-center gap-2 border text-white border-gray-line w-full py-2 p-x2 hover:cursor-pointer bg-gray-200  rounded-md">
+              <Image
+                src="/assets/icons/google-icon.svg"
+                width={20}
+                height={20}
+                alt="Google icon"
+              />
+              <span className="text-sm text-dark-gray  ">
+                Sign in with your Google account
+              </span>
+            </button>
           </div>
         </form>
       </div>
