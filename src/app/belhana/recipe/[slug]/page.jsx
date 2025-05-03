@@ -39,8 +39,12 @@ const RecipeSinglePage = async ({ params }) => {
       <section className="container px-4 bg-white pt-32 flex flex-col items-center justify-center gap-4 lg:flex-row lg:items-start">
         {/* recipe title */}
         <div className="lg:hidden w-full h-full ">
-          <RecipeTitle title={`${recipe.title}`} FBLink={recipe.pathToFBPage} />
+          <RecipeTitle title={recipe.title} FBLink={recipe.pathToFBPage} />
         </div>
+        {/* title in the mobile screens */}
+        {/* <div className="lg:hidden w-full px-2">
+            <LinkToFB position={""} link={recipe.pathToFBPage} />
+          </div> */}
         {/* recipe cover Image */}
         <div className="w-[360px] md:w-[412px] lg:w-1/3 flex items-center justify-center h-[676px] px-4 relative ">
           <Image
@@ -56,23 +60,20 @@ const RecipeSinglePage = async ({ params }) => {
           {/* recipe title */}
           <div className="w-full hidden lg:block">
             <RecipeTitle
-              title={`${recipe.title}`}
-              FBLink={`${recipe.pathToFBPage}`}
+              title={recipe.title}
+              FBLink={recipe.pathToFBPage}
             />
           </div>
           <RecipeDescription description={`${recipe.description}`} />
           <Specifications
-            prepareTime={`${recipe.avgTimeTobeFinished}`}
-            isForDieters={`${recipe.suitableToDieters ? "Yes" : "NO"}`}
-            isEconomic={`${recipe.isEconomic ? "Yes" : "NO"}`}
-            category={`${recipe.categoryTitle}`}
+            prepareTime={recipe.avgTimeTobeFinished}
+            isForDieters={recipe.suitableToDieters ? "Yes" : "NO"}
+            isEconomic={recipe.isEconomic ? "Yes" : "NO"}
+            category={recipe.categoryTitle}
           />
           <LikesAndComments />
 
-          {/* title in the mobile screens */}
-          <div className="lg:hidden w-full px-2">
-            <LinkToFB position={""} link={`${recipe.pathToFBPage}`} />
-          </div>
+          
           <Link href={"/belhana/recipe"} prefetch={false}>
             <div className="w-full border my-4 p-2 flex items-center justify-center cursor-pointer text-xl bg-gray-200 hover:bg-radial-gradient from-dark-blue to-black from-50% hover:text-white text-gray-600 transitio duration-300">
               More recipes...
